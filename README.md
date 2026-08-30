@@ -20,6 +20,7 @@ Please also keep in mind that I'm not a programmer/professional developer and I 
 * paho.mqtt.client
 
 (the above can be found on GitHub).
+
 Plus, of course, MSFS, Home Assistant with MQTT integration and local MQTT broker running.
 
 Simply download the template script from this repository and save it in a convenient location. Feel free to rename it after downloading.
@@ -42,7 +43,8 @@ Find the following lines:
 * Ext_Path = r"C:\MSFSPythonSimConnectMobiFlightExtension\src"
 * MQTT_BROKER = "127.0.0.1"
 * MQTT_PORT = "1883"
-change the values inside "" marks as needed and save.
+
+Change the values inside "" marks as needed and save.
 
 ## Adding new entries
 ### App
@@ -53,7 +55,7 @@ While path to your script still selected in the top bar, fill all the fields on 
 * Home assistant device - details of the device that should be created inside of Home Assistant's MQTT integration. You can add multiple entities to the same device.
 
 ### Note
-For now the app only supports creating binary sensors in HA, you can create other types of entities manually.
+For now the app only supports creating binary sensors in HA, you can create other types of HA entities manually.
 
 ### Example
 For PMDG 737-600 master warning indicator:
@@ -64,7 +66,8 @@ For PMDG 737-600 master warning indicator:
 * Name: PMDG 737-600
 * Manufacturer: PMDG
 * Model: 737-600 NG
-That should, after launching the script, create a binary sensor inside HA, which changes as the master warning indicator goes off or is turned off. You can then use the sensor in automations.
+
+That should, after launching the script, create a binary sensor inside HA, which changes as the master warning indicator goes off or is turned off in the cockpit of PMDG 737. You can then use the sensor in automations.
 
 ## Editing and removing entries
 The app only supports adding new entries. To edit or remove any existing ones you have to manually edit the script.
