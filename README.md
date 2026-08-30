@@ -1,5 +1,5 @@
 # About
-This is a project aiming to gather data from Microsoft Flight Simulator and pass it locally via MQTT to use with Home Assistant automations (for example - turn ambient light in room red when aircraft's alarm goes off, etc.). I created it since I was unable to find any existing simple and ready-to-use solution.
+This is a project aiming to gather data from Microsoft Flight Simulator and pass it locally via MQTT to use with Home Assistant automations (for example - turn ambient light in room red when aircraft's alarm goes off, etc.). I created it since I was unable to find any existing simple and ready-to-use solution that would allow to add custom data tracking.
 
 In essence it is a simple python script meant to run alongside MSFS. The additional app is only designed to help manage scripts (change basic MQTT config and add new entries) and is not required for the script itself to work.
 
