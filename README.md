@@ -18,6 +18,7 @@ Please also keep in mind that I'm not a programmer/professional developer and I 
 * simconnect_mobiflight
 * mobiflight_variable_requests
 * paho.mqtt.client
+
 (the above can be found on GitHub).
 Plus, of course, MSFS, Home Assistant with MQTT integration and local MQTT broker running.
 
