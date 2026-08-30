@@ -1,0 +1,297 @@
+object Form1: TForm1
+  Left = 824
+  Height = 497
+  Top = 368
+  Width = 680
+  BorderStyle = bsDialog
+  Caption = 'MSFS to MQTT'
+  ClientHeight = 497
+  ClientWidth = 680
+  Color = clSkyBlue
+  LCLVersion = '4.8.0.0'
+  Scaled = False
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 457
+    Top = 40
+    Width = 680
+    ActivePage = TabSheet1
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'General settings'
+      ClientHeight = 429
+      ClientWidth = 672
+      object BrokerIP: TEdit
+        Left = 128
+        Height = 23
+        Top = 16
+        Width = 208
+        TabOrder = 0
+        Text = '127.0.0.1'
+      end
+      object BrokerPort: TEdit
+        Left = 128
+        Height = 23
+        Top = 48
+        Width = 80
+        TabOrder = 1
+        Text = '1883'
+      end
+      object Button1: TButton
+        Left = 16
+        Height = 25
+        Top = 128
+        Width = 80
+        Caption = 'Apply'
+        TabOrder = 2
+        OnClick = Button1Click
+      end
+      object Label1: TLabel
+        Left = 16
+        Height = 17
+        Top = 16
+        Width = 101
+        Caption = 'MQTT Broker IP:'
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label2: TLabel
+        Left = 16
+        Height = 17
+        Top = 48
+        Width = 30
+        Caption = 'Port:'
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label3: TLabel
+        Left = 16
+        Height = 34
+        Top = 80
+        Width = 278
+        Caption = 'MSFSPythonSimConnectMobiFlightExtension'#13#10'path:'
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object ExtPath: TEdit
+        Left = 312
+        Height = 23
+        Top = 80
+        Width = 296
+        TabOrder = 3
+        Text = 'C:\MSFSPythonSimConnectMobiFlightExtension\src'
+      end
+      object Button2: TButton
+        Left = 608
+        Height = 25
+        Top = 80
+        Width = 59
+        Caption = 'Browse'
+        TabOrder = 4
+        OnClick = Button2Click
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Add entry'
+      ClientHeight = 429
+      ClientWidth = 672
+      object UniqueID: TEdit
+        Left = 60
+        Height = 23
+        Top = 48
+        Width = 228
+        TabOrder = 0
+        Text = 'UniqeID (no spaces)'
+      end
+      object EntryName: TEdit
+        Left = 60
+        Height = 23
+        Top = 80
+        Width = 228
+        TabOrder = 1
+        Text = 'EntryName'
+      end
+      object LVar: TEdit
+        Left = 60
+        Height = 23
+        Top = 152
+        Width = 228
+        TabOrder = 2
+        Text = 'MSFS LVar'
+      end
+      object DevIdent: TEdit
+        Left = 60
+        Height = 23
+        Top = 224
+        Width = 228
+        TabOrder = 3
+        Text = 'Identifier'
+      end
+      object DevName: TEdit
+        Left = 60
+        Height = 23
+        Top = 256
+        Width = 228
+        TabOrder = 4
+        Text = 'Name'
+      end
+      object DevManu: TEdit
+        Left = 60
+        Height = 23
+        Top = 288
+        Width = 228
+        TabOrder = 5
+        Text = 'Manufacturer'
+      end
+      object DevModel: TEdit
+        Left = 60
+        Height = 23
+        Top = 320
+        Width = 228
+        TabOrder = 6
+        Text = 'Model'
+      end
+      object Label5: TLabel
+        Left = 16
+        Height = 17
+        Top = 16
+        Width = 162
+        Caption = 'Home Assistant Discovery'
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label6: TLabel
+        Left = 16
+        Height = 17
+        Top = 120
+        Width = 29
+        Caption = 'Data'
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label7: TLabel
+        Left = 16
+        Height = 17
+        Top = 192
+        Width = 142
+        Caption = 'Home Assistant Device'
+        Font.CharSet = EASTEUROPE_CHARSET
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Button4: TButton
+        Left = 16
+        Height = 25
+        Top = 360
+        Width = 75
+        Caption = 'ADD'
+        TabOrder = 7
+        OnClick = Button4Click
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Read entries'
+      ClientHeight = 429
+      ClientWidth = 672
+      object ListBox1: TListBox
+        Left = 0
+        Height = 429
+        Top = 0
+        Width = 274
+        Align = alLeft
+        ItemHeight = 0
+        TabOrder = 0
+      end
+      object Button5: TButton
+        Left = 280
+        Height = 160
+        Top = 0
+        Width = 160
+        Caption = 'Refresh'
+        DoubleBuffered = True
+        ParentDoubleBuffered = False
+        TabOrder = 1
+        OnClick = Button5Click
+      end
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 680
+    Align = alTop
+    ClientHeight = 40
+    ClientWidth = 680
+    ParentBackground = False
+    TabOrder = 1
+    object ScrPath: TEdit
+      Left = 96
+      Height = 23
+      Top = 8
+      Width = 480
+      Align = alCustom
+      AutoSize = False
+      TabOrder = 0
+      Text = 'C:\'
+    end
+    object Button3: TButton
+      Left = 584
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'Browse'
+      TabOrder = 1
+      OnClick = Button3Click
+    end
+    object Label4: TLabel
+      Left = 4
+      Height = 17
+      Top = 8
+      Width = 87
+      AutoSize = False
+      Caption = 'Path to script:'
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Height = -13
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    FileName = 'C:\'
+    InitialDir = 'C:\'
+    Left = 304
+    Top = 432
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 264
+    Top = 432
+  end
+end
