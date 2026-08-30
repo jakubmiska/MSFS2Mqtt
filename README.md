@@ -25,6 +25,8 @@ Plus, of course, MSFS, Home Assistant with MQTT integration and local MQTT broke
 
 Simply download the template script from this repository and save it in a convenient location. Feel free to rename it after downloading.
 
+I also included a working example which is a complete script I actually use with PMDG 737-600 if you want to investigate further.
+
 ## Config
 You can either manually edit the script or use the optional app.
 
